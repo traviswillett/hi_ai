@@ -4,8 +4,6 @@
 
 Before we can answer our big question, we need a source of data that's trustworthy, always available, and (ideally) free. For satellites, one of the best sources is Celestrak—a public website used by scientists, engineers, and space agencies around the world.
 
----
-
 ## See Satellite Data for Yourself
 
 Let's start by looking at real satellite data!
@@ -44,40 +42,28 @@ Let's start by looking at real satellite data!
 4. Try searching (Ctrl+F) for a satellite name you recognize, like "Starlink". There are thousands!
 5. When you're ready, come back here and we'll learn how to download this data with Python!
 
----
-
 ## Your First Python Program: Download Satellite Data
 
 Now let's use GitHub Copilot to help us write Python code that downloads satellite data!
 
 **Step-by-step:**
 
-1. Create a new file called `get_satellites.py` in this folder.
+1. Open Copilot Chat by pressing `Ctrl+I` (or `Cmd+I` on Mac).
 
-2. In the new file, type this comment and press `Enter`:
-   ```python
-   # Download satellite data from Celestrak using Python
-   ```
+2. Ask Copilot to create the file for you: "Create a new Python file called get_satellites.py in this folder and let's work on it together."
 
-3. Copilot should suggest some code. If it doesn't, try typing:
-   ```python
-   import requests
-   ```
+3. In the chat, ask: "Write a simple Python script to download all satellite data from celestrak and save it to a file called satellites.txt"
 
-4. Keep typing comments about what you want to do, and let Copilot help you complete the code:
-   ```python
-   # Get the URL for active satellites
-   # Download the data
-   # Save it to a file called satellites.txt
-   ```
+4. **Important:** If Copilot suggests complex code with classes or functions, ask it to simplify! Try these follow-up prompts:
+   - "Make this simpler for a beginner"
+   - "Can you write this without functions or classes?"
+   - "I want the shortest possible code that just downloads and saves the file"
 
-5. Ask Copilot for help if you get stuck! Try pressing `Ctrl+I` (or `Cmd+I` on Mac) and ask questions like:
-   - "How do I download a file from a URL in Python?"
-   - "How do I save text to a file?"
+5. If you need help understanding any part of the code, ask Copilot Chat:
+   - "What does this line do?"
+   - "Can you explain this code step by step?"
 
 6. Run your program and see if it creates a `satellites.txt` file with real satellite data!
-
----
 
 ## Troubleshooting: Missing Modules
 

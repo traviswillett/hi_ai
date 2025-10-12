@@ -13,7 +13,7 @@ Walk outside and look up at the night sky. How many of those dots are satellites
 
 **Try this:**
 
-1. Open your web browser and go to [Google Gemini](https://gemini.google.com/).
+1. Open your web browser and go to <a href="https://gemini.google.com/" target="_blank">Google Gemini</a>.
 2. Type or say: `How many satellites are overhead of me right now?`
 3. Read the answer and think about what you learn!
 

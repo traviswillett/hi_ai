@@ -10,9 +10,9 @@ url = "https://celestrak.org/NORAD/elements/gp.php?GROUP=active&FORMAT=tle"
 print("Downloading satellite data...")
 response = requests.get(url)
 
-# Save it to a file called satellites.txt
+# Save it to a file called example_satellites.txt
 # Write all the satellite data to a text file on your computer
-with open("satellites.txt", "w") as file:
+with open("example_satellites.txt", "w") as file:
     file.write(response.text)
 
-print("Done! Check satellites.txt for your data.")
+print("Done! Check example_satellites.txt for your data.")
