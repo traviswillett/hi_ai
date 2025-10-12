@@ -99,11 +99,17 @@ Before you start coding, make sure you have everything you need!
 
 ### 4. Install Python
 1. You need to have Python installed on your computer to run Python files.
-2. If you don't have Python yet, download it from <a href="https://www.python.org/downloads/" target="_blank">python.org</a> and install it.
-3. After installing, restart VS Code.
-4. When you open a `.py` file in VS Code, you may see a prompt to install the Python extension—click **Install** if prompted.
-5. You can check if Python is installed by opening a terminal in VS Code and typing `python --version` (or `python3 --version` on Mac/Linux).
-6. If you have any issues, see the <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank">VS Code Python setup guide</a>.
+2. **Install Python 3.11 or newer** (recommended: Python 3.12) for best compatibility.
+3. The easiest way is to install Python through VS Code:
+   - Open VS Code
+   - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the command palette
+   - Type "Python: Select Interpreter" and press Enter
+   - If Python isn't installed, VS Code will guide you to install it
+4. Alternatively, you can download **Python 3.14** directly from <a href="https://www.python.org/downloads/" target="_blank">python.org</a> and install it.
+5. After installing, restart VS Code.
+6. When you open a `.py` file in VS Code, you may see a prompt to install the Python extension—click **Install** if prompted.
+7. You can check if Python is installed by opening a terminal in VS Code and typing `python --version` (or `python3 --version` on Mac/Linux).
+8. If you have any issues, see the <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank">VS Code Python setup guide</a> or ask Copilot chat for help.
 
 ---
 
