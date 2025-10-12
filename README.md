@@ -1,5 +1,3 @@
-# AI-enabled Satellite Tracker Project
-
 ![A person looking up at the night sky, wondering about satellites.](assets/look_up.png)
 
 Walk outside and look up at the night sky. How many of those dots are satellites? How many satellites are overhead that we can't see? How might we find out?
