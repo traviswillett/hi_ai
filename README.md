@@ -80,12 +80,12 @@ flowchart TD
 Before you start coding, make sure you have everything you need!
 
 ### 1. Create a GitHub Account
-1. Go to [https://github.com/](https://github.com/)
+1. Go to <a href="https://github.com/" target="_blank">https://github.com/</a>
 2. Click **Sign up** and follow the instructions to create your free account.
 3. Verify your email address.
 
 ### 2. Install Visual Studio Code (VS Code)
-1. Go to [https://code.visualstudio.com/](https://code.visualstudio.com/)
+1. Go to <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
 2. Download and install VS Code for your computer (Windows, Mac, or Linux).
 3. Open VS Code after installation.
 
@@ -99,11 +99,11 @@ Before you start coding, make sure you have everything you need!
 
 ### 4. Install Python
 1. You need to have Python installed on your computer to run Python files.
-2. If you don’t have Python yet, download it from [python.org](https://www.python.org/downloads/) and install it.
+2. If you don't have Python yet, download it from <a href="https://www.python.org/downloads/" target="_blank">python.org</a> and install it.
 3. After installing, restart VS Code.
 4. When you open a `.py` file in VS Code, you may see a prompt to install the Python extension—click **Install** if prompted.
 5. You can check if Python is installed by opening a terminal in VS Code and typing `python --version` (or `python3 --version` on Mac/Linux).
-6. If you have any issues, see the [VS Code Python setup guide](https://code.visualstudio.com/docs/python/python-tutorial).
+6. If you have any issues, see the <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank">VS Code Python setup guide</a>.
 
 ---
 
