@@ -1,6 +1,6 @@
 # AI-enabled Satellite Tracker Project
 
-![A person looking up at the night sky, wondering about satellites.](look_up.png)
+![A person looking up at the night sky, wondering about satellites.](assets/look_up.png)
 
 Walk outside and look up at the night sky. How many of those dots are satellites? How many satellites are overhead that we can't see? How might we find out?
 
@@ -71,56 +71,6 @@ flowchart TD
    A --> B --> C --> E --> D --> F
 ```
 
-1. **Ask the Big Question**
-   - _"How many satellites are overhead right now?"_
-
-2. **Get Satellite Data... Somehow...**
-    - Celestrak is a trusted website that collects and shares up-to-date information about satellites orbiting Earth. It’s used by scientists, engineers, and space agencies around the world as a reliable “source of truth” for satellite data.
-   - Go to [Celestrak](https://celestrak.org/) and have a look around. It's an inmpressive site but not that helpful in it's raw form.
-   - Use Python to download satellite data from [Celestrak](https://celestrak.org/)
-   - Visual: Show a list or map of satellites
-
-3. **Propagate Satellite Orbits**
-   - Use Python to calculate where satellites are at a specific time
-   - Visual: Animation or diagram of orbits
-
-4. **Visualize with CesiumJS**
-   - Build a web app to show satellites in 3D over the Earth
-   - Visual: Interactive globe (CesiumJS)
-
-5. **Pick a Location**
-   - Click on the globe to select a spot on Earth
-   - Visual: Highlight the selected point
-
-6. **Count Overhead Satellites**
-   - Show how many satellites are above the selected spot
-   - Visual: Number, icons, or animation
-
-7. **Explore and Interact**
-   - Change time, location, or satellite types
-   - Visual: Sliders, buttons, and real-time updates
-
----
-
-## Learning Prompts & Activities
-
-- **AI Prompts:**
-  - "Ask Copilot: How do I read a file in Python?"
-  - "Ask Copilot: How do I draw a point on a CesiumJS globe?"
-- **Mini Challenges:**
-  - Download and print the first 5 satellites from Celestrak
-  - Animate a satellite moving in orbit
-  - Make a button that changes the time
-
----
-
-## Getting Started
-
-1. **Open this project in VS Code**
-2. **Follow the visual steps above**
-3. **Use Copilot to ask questions and get code examples**
-4. **Try the mini challenges and prompts**
-
 ---
 
 ## Next Steps
@@ -129,6 +79,51 @@ flowchart TD
 - Visuals and diagrams will be included to guide each step.
 - No prior coding experience needed—just curiosity!
 
----
 
 **Let’s build something amazing—one visual step at a time!**
+
+## Get Set Up: Tools You’ll Need
+
+Before you start coding, make sure you have everything you need!
+
+### 1. Create a GitHub Account
+1. Go to [https://github.com/](https://github.com/)
+2. Click **Sign up** and follow the instructions to create your free account.
+3. Verify your email address.
+
+### 2. Install Visual Studio Code (VS Code)
+1. Go to [https://code.visualstudio.com/](https://code.visualstudio.com/)
+2. Download and install VS Code for your computer (Windows, Mac, or Linux).
+3. Open VS Code after installation.
+
+
+### 3. Enable GitHub Copilot
+1. In VS Code, click the Extensions icon (or press `Ctrl+Shift+X`).
+2. Search for **GitHub Copilot**.
+3. Click **Install** next to the GitHub Copilot extension.
+4. Sign in with your GitHub account if prompted.
+5. You’re ready to use AI to help you code!
+
+### 4. Install Python
+1. You need to have Python installed on your computer to run Python files.
+2. If you don’t have Python yet, download it from [python.org](https://www.python.org/downloads/) and install it.
+3. After installing, restart VS Code.
+4. When you open a `.py` file in VS Code, you may see a prompt to install the Python extension—click **Install** if prompted.
+5. You can check if Python is installed by opening a terminal in VS Code and typing `python --version` (or `python3 --version` on Mac/Linux).
+6. If you have any issues, see the [VS Code Python setup guide](https://code.visualstudio.com/docs/python/python-tutorial).
+
+---
+
+## Make Sure Everything Works: Hello World Test
+
+Before you start with satellites, let’s make sure your setup is working!
+
+1. Open this project folder in VS Code.
+2. Create a new file called `hello.py`.
+3. In the new file, type `# Write a Python program that prints Hello, world!` and press `Enter`.
+4. If you have GitHub Copilot enabled, you should see a suggestion for a print statement. Press `Tab` to accept it.
+5. Save the file and run it (right-click and select **Run Python File in Terminal**, or type `python hello.py` in the terminal).
+6. You should see `Hello, world!` printed in the terminal.
+
+If this works, you’re ready to start coding with Copilot!
+
