@@ -19,27 +19,22 @@ Walk outside and look up at the night sky. How many of those dots are satellites
 2. Type or say: `How many satellites are overhead of me right now?`
 3. Read the answer and think about what you learn!
 
+    <details>
+    <summary><strong>Sample Gemini Response (click to reveal)</strong></summary>
 
----
+    > "That's a great question, but I can't give you a precise number without knowing your exact location and the specific definition of 'overhead.'
+    >
+    > The actual number of cataloged space objects—satellites, rocket bodies, and debris—crossing the visible sky at any given moment is always changing, but it's typically dozens of objects.
+    >
+    > According to real-time satellite trackers:
+    >
+    > &nbsp;&nbsp;&nbsp;&nbsp;At any given time, there can be dozens of objects (sometimes 80 or more) crossing the sky above a general location.
+    >
+    > &nbsp;&nbsp;&nbsp;&nbsp;This includes operational satellites like those in the GPS, Starlink, or Iridium constellations, as well as defunct satellites and debris.
+    >
+    > If you are interested in seeing a specific, visible satellite, like the International Space Station (ISS) or a Starlink train, you would need to use a real-time satellite tracking website or app. These tools use your location to calculate the exact timing, path, and brightness for objects that will be visible to you."
 
-<details>
-<summary><strong>Sample Gemini Response (click to reveal)</strong></summary>
-
-> "That's a great question, but I can't give you a precise number without knowing your exact location and the specific definition of 'overhead.'
->
-> The actual number of cataloged space objects—satellites, rocket bodies, and debris—crossing the visible sky at any given moment is always changing, but it's typically dozens of objects.
->
-> According to real-time satellite trackers:
->
-> &nbsp;&nbsp;&nbsp;&nbsp;At any given time, there can be dozens of objects (sometimes 80 or more) crossing the sky above a general location.
->
-> &nbsp;&nbsp;&nbsp;&nbsp;This includes operational satellites like those in the GPS, Starlink, or Iridium constellations, as well as defunct satellites and debris.
->
-> If you are interested in seeing a specific, visible satellite, like the International Space Station (ISS) or a Starlink train, you would need to use a real-time satellite tracking website or app. These tools use your location to calculate the exact timing, path, and brightness for objects that will be visible to you."
-
-</details>
-
----
+    </details>
 
 4. Do you think we can do better? How can AI help us build a better answer?
 
