@@ -127,3 +127,8 @@ Before you start with satellites, let’s make sure your setup is working!
 
 If this works, you’re ready to start coding with Copilot!
 
+Let's Go!
+Ready to start coding? Begin with:
+
+**[👉 Step 1: Get Satellite Data](step1_get_satellites/README.md)**
+
