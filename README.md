@@ -62,7 +62,7 @@ Walk outside and look up at the night sky. How many of those dots are satellites
 
 ```mermaid
 flowchart TD
-   A[Ask the Question:<br/>"How many satellites are overhead?"]
+   A[Ask the Question: How many satellites are overhead?]
    B[Get Satellite Data]
    C[Store the Data]
    D[Plot or Visualize the Data]
