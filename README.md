@@ -65,8 +65,10 @@ flowchart TD
    A[Ask the Question: How many satellites are overhead?]
    B[Get Satellite Data]
    C[Store the Data]
+   E[Filter Data for our Location]
    D[Plot or Visualize the Data]
-   A --> B --> C --> D
+   F[Interact or Explore]
+   A --> B --> C --> E --> D --> F
 ```
 
 1. **Ask the Big Question**
