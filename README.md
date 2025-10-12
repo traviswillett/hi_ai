@@ -13,7 +13,7 @@ Walk outside and look up at the night sky. How many of those dots are satellites
 
 **Try this:**
 
-1. Open your web browser and go to <a href="https://gemini.google.com/" target="_blank">Google Gemini</a>.
+1. Open your web browser and go to <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Google Gemini</a>.
 2. Type or say: `How many satellites are overhead of me right now?`
 3. Read the answer and think about what you learn!
 
@@ -80,12 +80,12 @@ flowchart TD
 Before you start coding, make sure you have everything you need!
 
 ### 1. Create a GitHub Account
-1. Go to <a href="https://github.com/" target="_blank">https://github.com/</a>
+1. Go to <a href="https://github.com/" target="_blank" rel="noopener noreferrer">https://github.com/</a>
 2. Click **Sign up** and follow the instructions to create your free account.
 3. Verify your email address.
 
 ### 2. Install Visual Studio Code (VS Code)
-1. Go to <a href="https://code.visualstudio.com/" target="_blank">https://code.visualstudio.com/</a>
+1. Go to <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">https://code.visualstudio.com/</a>
 2. Download and install VS Code for your computer (Windows, Mac, or Linux).
 3. Open VS Code after installation.
 
@@ -98,18 +98,18 @@ Before you start coding, make sure you have everything you need!
 5. You’re ready to use AI to help you code!
 
 ### 4. Install Python
-1. You need to have Python installed on your computer to run Python files.
-2. **Install Python 3.11 or newer** (recommended: Python 3.12) for best compatibility.
-3. The easiest way is to install Python through VS Code:
+1. You need Python 3.14 on your computer to run Python files.
+2. Let GitHub Copilot help you install it through VS Code:
    - Open VS Code
-   - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the command palette
-   - Type "Python: Select Interpreter" and press Enter
-   - If Python isn't installed, VS Code will guide you to install it
-4. Alternatively, you can download **Python 3.14** directly from <a href="https://www.python.org/downloads/" target="_blank">python.org</a> and install it.
-5. After installing, restart VS Code.
-6. When you open a `.py` file in VS Code, you may see a prompt to install the Python extension—click **Install** if prompted.
+   - Press `Ctrl+I` (or `Cmd+I` on Mac) to open Copilot Chat
+   - Ask: "How do I install Python 3.14 on my computer through VS Code?"
+   - Follow Copilot's step-by-step instructions for your operating system
+3. After installation, restart VS Code.
+4. When you open a `.py` file in VS Code, you may see a prompt to install the Python extension—click **Install** if prompted.
+5. You can check if Python is installed by opening a terminal in VS Code and typing `python --version` (or `python3 --version` on Mac/Linux).
+6. If you have any issues, ask Copilot Chat: "I'm having trouble with Python installation, can you help troubleshoot?"
 7. You can check if Python is installed by opening a terminal in VS Code and typing `python --version` (or `python3 --version` on Mac/Linux).
-8. If you have any issues, see the <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank">VS Code Python setup guide</a> or ask Copilot chat for help.
+8. If you have any issues, see the <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank" rel="noopener noreferrer">VS Code Python setup guide</a> or ask Copilot chat for help.
 
 ---
 

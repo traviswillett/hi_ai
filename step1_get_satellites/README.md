@@ -50,7 +50,7 @@ Now let's use GitHub Copilot to help us write Python code that downloads satelli
 
 1. Open Copilot Chat by pressing `Ctrl+I` (or `Cmd+I` on Mac).
 
-2. Ask Copilot to create the file for you: "Create a new Python file called get_satellites.py in this folder and let's work on it together."
+2. Ask Copilot to create the file for you: "Create an empty Python file called get_satellites.py in this folder and let's work on it together."
 
 3. In the chat, ask: "Write a simple Python script to download all satellite data from celestrak and save it to a file called satellites.txt"
 
