@@ -8,8 +8,8 @@ theme: minima
 # remote_theme: pages-themes/architect@v0.2.0
 
 # Site Information
-title: "AI-enabled Satellite Tracker Project"
-description: "Learn AI-powered software development by building a satellite tracking application"
+title: "AI-Enabled Satellite Tracker"
+description: "Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries."
 author: "Travis Willett"
 email: ""
 
@@ -25,13 +25,11 @@ repository: "traviswillett/hi_ai"
 header_pages:
   - README.md
   - step1_get_satellites/README.md
+  - step2_data_processing/README.md
 
 # Build Settings
 markdown: kramdown
 highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 
 # Plugins
 plugins:
@@ -45,7 +43,8 @@ kramdown:
   syntax_highlighter: rouge
   syntax_highlighter_opts:
     block:
-      line_numbers: false
+      line_numbers: true
+      css_class: 'highlight'
 
 # Collections (for organizing multiple steps)
 collections:
@@ -62,13 +61,29 @@ exclude:
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
+  - "*.py"
+  - "*.txt"
+  - "*.png"
+  - "*.jpg"
 
-# Custom styling (you can override theme styles)
+# Custom styling
 sass:
   style: compressed
 
-# Enable code syntax highlighting
-highlighter: rouge
-
-# Custom CSS (create assets/css/style.scss to override theme)
-# We'll create this next if you want custom styling
+# Project metadata for enhanced presentation
+project:
+  subtitle: "Build Satellite Tracking Apps with AI"
+  version: "1.0"
+  difficulty: "Beginner Friendly"
+  duration: "2-3 hours"
+  technologies:
+    - Python
+    - GitHub Copilot
+    - Matplotlib
+    - Cartopy
+    - Skyfield
+  learning_outcomes:
+    - AI-assisted programming with GitHub Copilot
+    - Professional satellite tracking with real-time data
+    - Advanced data visualization techniques
+    - Prompt engineering best practices
