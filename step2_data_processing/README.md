@@ -26,7 +26,7 @@ Let's start by asking AI the way most people naturally would:
 2. **Ask Copilot the obvious question**:
    Open Copilot Chat (`Ctrl+Alt+I`) and ask:
    
-   > Plot all the satellites in satellites.txt
+   > Plot the satellites in satellites.txt
 
 3. **Run whatever it creates**:
    - Accept whatever filename Copilot suggests
