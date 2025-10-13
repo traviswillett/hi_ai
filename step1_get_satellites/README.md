@@ -127,4 +127,4 @@ This is the foundation for answering our big question: "How many satellites are 
 
 ---
 
-**Next:** [👉 Step 2: Data Processing](../step2_data_processing/README.md)
+**Next:** [🌍 Step 2: Plot Satellite Orbits](../step2_data_processing/README.md)

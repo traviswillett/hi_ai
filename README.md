@@ -88,8 +88,8 @@ Walk outside and look up at the night sky. How many of those dots are satellites
   
   <div class="flowchart-step">
     <div class="step-icon">📊</div>
-    <div class="step-title">Plot or Visualize</div>
-    <div class="step-description">Show on interactive map</div>
+    <div class="step-title">Plot or Visualize ✅</div>
+    <div class="step-description">Professional satellite tracking with real-time ISS position</div>
   </div>
   
   <div class="flowchart-arrow">⬇️</div>
@@ -168,5 +168,5 @@ Ready to start coding? Begin with:
 
 **[👉 Step 1: Get Satellite Data](step1_get_satellites/README.md)**
 
-**[🔍 Step 2: Data Processing](step2_data_processing/README.md)** *(coming soon!)*
+**[🌍 Step 2: Plot Satellite Orbits](step2_data_processing/README.md)** *(Completed!)*
 
