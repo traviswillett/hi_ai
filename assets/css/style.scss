@@ -1,0 +1,191 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom styling for AI Satellite Tracker Project */
+
+/* Make the site more colorful and engaging */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* Header styling */
+.site-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem 0;
+}
+
+.site-title {
+  color: white !important;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Make headings more visually appealing */
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+h1 {
+  color: #3742fa;
+  border-bottom: 3px solid #3742fa;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  color: #5352ed;
+  border-left: 4px solid #5352ed;
+  padding-left: 1rem;
+  margin-top: 2rem;
+}
+
+/* Style code blocks to look more modern */
+pre, code {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+code {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.9em;
+}
+
+/* Make buttons and links more engaging */
+a {
+  color: #3742fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #5352ed;
+  text-decoration: underline;
+}
+
+/* Style the step navigation */
+.step-nav {
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.step-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Style blockquotes (like the Gemini response) */
+blockquote {
+  background: #f8f9fa;
+  border-left: 4px solid #3742fa;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Style tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #3742fa;
+  color: white;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Style the mermaid diagrams */
+.mermaid {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Add some fun animations */
+img {
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Style details/summary elements */
+details {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #3742fa;
+  margin-bottom: 0.5rem;
+}
+
+summary:hover {
+  color: #5352ed;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 1.5rem;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  .step-nav {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
+
+/* Add some visual flair with emojis and icons */
+h2:before {
+  content: "🚀 ";
+  margin-right: 0.5rem;
+}
+
+/* Special styling for step headings */
+h1:contains("Step") {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+}

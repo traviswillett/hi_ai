@@ -1,0 +1,66 @@
+# GitHub Pages Configuration for AI-enabled Satellite Tracker Project
+
+# Theme Configuration
+theme: minima
+# Alternative themes you can try:
+# theme: jekyll-theme-cayman
+# theme: jekyll-theme-minimal
+# remote_theme: pages-themes/architect@v0.2.0
+
+# Site Information
+title: "AI-enabled Satellite Tracker Project"
+description: "Learn AI-powered software development by building a satellite tracking application"
+author: "Travis Willett"
+email: ""
+
+# Site URL (will be automatically set by GitHub Pages)
+url: "https://traviswillett.github.io"
+baseurl: "/hi_ai"
+
+# Social Media / Repository Links
+github_username: traviswillett
+repository: "traviswillett/hi_ai"
+
+# Navigation
+header_pages:
+  - README.md
+  - step1_get_satellites/README.md
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections (for organizing multiple steps)
+collections:
+  steps:
+    output: true
+    permalink: /:collection/:name/
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+
+# Custom styling (you can override theme styles)
+sass:
+  style: compressed
+
+# Enable code syntax highlighting
+highlighter: rouge
+
+# Custom CSS (create assets/css/style.scss to override theme)
+# We'll create this next if you want custom styling
