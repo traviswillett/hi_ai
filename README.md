@@ -168,3 +168,5 @@ Ready to start coding? Begin with:
 
 **[👉 Step 1: Get Satellite Data](step1_get_satellites/README.md)**
 
+**[🔍 Step 2: Data Processing](step2_data_processing/README.md)** *(coming soon!)*
+
