@@ -53,29 +53,51 @@ Walk outside and look up at the night sky. How many of those dots are satellites
 
 ## Project Flow (Visual Outline)
 
-<div class="flowchart">
-  <div class="flow-step">
-    <div class="step-box">📋 Ask the Question<br><small>How many satellites are overhead?</small></div>
-    <div class="arrow">↓</div>
+<div class="flowchart-container">
+  <div class="flowchart-step">
+    <div class="step-icon">📋</div>
+    <div class="step-title">Ask the Question</div>
+    <div class="step-description">How many satellites are overhead?</div>
   </div>
-  <div class="flow-step">
-    <div class="step-box">📡 Get Satellite Data<br><small>Download from Celestrak</small></div>
-    <div class="arrow">↓</div>
+  
+  <div class="flowchart-arrow">⬇️</div>
+  
+  <div class="flowchart-step">
+    <div class="step-icon">📡</div>
+    <div class="step-title">Get Satellite Data</div>
+    <div class="step-description">Download from Celestrak</div>
   </div>
-  <div class="flow-step">
-    <div class="step-box">💾 Store the Data<br><small>Save to files</small></div>
-    <div class="arrow">↓</div>
+  
+  <div class="flowchart-arrow">⬇️</div>
+  
+  <div class="flowchart-step">
+    <div class="step-icon">💾</div>
+    <div class="step-title">Store the Data</div>
+    <div class="step-description">Save to files</div>
   </div>
-  <div class="flow-step">
-    <div class="step-box">🔍 Filter Data<br><small>For our location</small></div>
-    <div class="arrow">↓</div>
+  
+  <div class="flowchart-arrow">⬇️</div>
+  
+  <div class="flowchart-step">
+    <div class="step-icon">🔍</div>
+    <div class="step-title">Filter Data</div>
+    <div class="step-description">For our location</div>
   </div>
-  <div class="flow-step">
-    <div class="step-box">📊 Plot or Visualize<br><small>Show on interactive map</small></div>
-    <div class="arrow">↓</div>
+  
+  <div class="flowchart-arrow">⬇️</div>
+  
+  <div class="flowchart-step">
+    <div class="step-icon">📊</div>
+    <div class="step-title">Plot or Visualize</div>
+    <div class="step-description">Show on interactive map</div>
   </div>
-  <div class="flow-step">
-    <div class="step-box">🎮 Interact or Explore<br><small>Click, zoom, filter</small></div>
+  
+  <div class="flowchart-arrow">⬇️</div>
+  
+  <div class="flowchart-step">
+    <div class="step-icon">🎮</div>
+    <div class="step-title">Interact or Explore</div>
+    <div class="step-description">Click, zoom, filter</div>
   </div>
 </div>
 

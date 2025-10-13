@@ -39,12 +39,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Mermaid Configuration
-mermaid:
-  # Version of mermaid library
-  # Visit https://unpkg.com/browse/mermaid/ for available versions
-  version: "10.6.1"
-
 # Markdown processing
 kramdown:
   input: GFM
