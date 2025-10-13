@@ -51,7 +51,7 @@ Walk outside and look up at the night sky. How many of those dots are satellites
    - JavaScript & CesiumJS (for 3D visualization)
 
 
-## Project Flow (Visual Outline)
+## 🎯 Project Flow (Visual Outline)
 
 <div class="flowchart-container">
   <div class="flowchart-step">
@@ -103,7 +103,7 @@ Walk outside and look up at the night sky. How many of those dots are satellites
 
 ---
 
-## Next Steps
+## 🚀 Next Steps
 
 - Sample code and AI prompts will be added in each folder as you progress.
 - Visuals and diagrams will be included to guide each step.
@@ -112,7 +112,7 @@ Walk outside and look up at the night sky. How many of those dots are satellites
 
 **Let’s build something amazing—one visual step at a time!**
 
-## Get Set Up: Tools You’ll Need
+## 🛠️ Get Set Up: Tools You'll Need
 
 Before you start coding, make sure you have everything you need!
 
@@ -150,7 +150,7 @@ Before you start coding, make sure you have everything you need!
 
 ---
 
-## Make Sure Everything Works: Hello World Test
+## ✅ Make Sure Everything Works: Hello World Test
 
 Before you start with satellites, let’s make sure your setup is working!
 
@@ -163,10 +163,10 @@ Before you start with satellites, let’s make sure your setup is working!
 
 If this works, you’re ready to start coding with Copilot!
 
-Let's Go!
+## 🎯 Let's Go!
 Ready to start coding? Begin with:
 
 **[👉 Step 1: Get Satellite Data](step1_get_satellites/README.md)**
 
-**[🌍 Step 2: Plot Satellite Orbits](step2_data_processing/README.md)** *(Completed!)*
+**[🌍 Step 2: Plot Satellite Orbits](step2_data_processing/README.md)**
 

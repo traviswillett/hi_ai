@@ -5,9 +5,9 @@ Before we can answer our big question, we need a source of data that's trustwort
 
 ## 👀 See Satellite Data for Yourself
 
-Let's start by looking at real satellite data! 🛰️
+Let's start by looking at real satellite data!
 
-**📋 Step-by-step:**
+**Step-by-step:**
 1. Open your web browser and go to <a href="https://celestrak.org/NORAD/elements/gp.php?GROUP=active&FORMAT=tle" target="_blank" rel="noopener noreferrer">Celestrak</a>
 2. You should see a page full of text. This is called "TLE data"  (Two-Line Element data) and it describes the orbits of satellites.
 
@@ -44,9 +44,9 @@ You don't need to understand all the numbers yet—just know that this is the da
 
 ## 🐍 Your First Python Program: Download Satellite Data
 
-Now let's use GitHub Copilot to help us write Python code that downloads satellite data! 🤖
+Now let's use GitHub Copilot to help us write Python code that downloads satellite data!
 
-**🎯 Step-by-step:**
+**Step-by-step:**
 
 1. Open Copilot Chat by pressing `Ctrl+Alt+I` (or `Ctrl+Cmd+I` on Mac).
 
@@ -54,7 +54,7 @@ Now let's use GitHub Copilot to help us write Python code that downloads satelli
 
 3. In the chat, ask: "Write a simple Python script to download all satellite data from celestrak and save it to a file called satellites.txt"
 
-4. ⚠️ **Important:** If Copilot suggests complex code with classes or functions, ask it to simplify! Try these follow-up prompts:
+4. **Important:** If Copilot suggests complex code with classes or functions, ask it to simplify! Try these follow-up prompts:
    - "Make this simpler for a beginner"
    - "Can you write this without functions or classes?"
    - "I want the shortest possible code that just downloads and saves the file"
@@ -63,7 +63,7 @@ Now let's use GitHub Copilot to help us write Python code that downloads satelli
    - "What does this line do?"
    - "Can you explain this code step by step?"
 
-6. 🎉 Run your program and see if it creates a `satellites.txt` file with real satellite data!
+6. Run your program and see if it creates a `satellites.txt` file with real satellite data!
 
 <details>
 <summary><strong>🔧 Troubleshooting: Missing Modules</strong> (click if you get errors)</summary>
@@ -82,9 +82,9 @@ If you get an error like `ModuleNotFoundError: No module named 'requests'`, don'
 
 ## ✅ Verify Your Success: Check the Downloaded Data
 
-Great! If your Python script ran without errors, you should now have a file called `satellites.txt` with real satellite data. Let's make sure it worked! 🔍
+Great! If your Python script ran without errors, you should now have a file called `satellites.txt` with real satellite data. Let's make sure it worked!
 
-**🎯 Step-by-step verification:**
+**Step-by-step verification:**
 
 1. **Find your new file:** Look in the same folder as your `get_satellites.py` file. You should see a new file called `satellites.txt`.
 
@@ -103,28 +103,28 @@ Great! If your Python script ran without errors, you should now have a file call
 
 5. **Check the file size:** Your `satellites.txt` file should be several hundred KB or larger (it contains thousands of satellites!)
 
-**🎉 Success indicators:**
-- ✅ File exists and opens without errors
-- ✅ Contains satellite names and TLE data
-- ✅ Data matches what you see on Celestrak website
-- ✅ File is large (lots of satellites!)
+**Success indicators:**
+- File exists and opens without errors
+- Contains satellite names and TLE data
+- Data matches what you see on Celestrak website
+- File is large (lots of satellites!)
 
-**🚨 If something doesn't look right:**
-- 💬 Ask Copilot Chat: "My satellites.txt file doesn't look right. Can you help me debug my script?"
-- 🌐 Check if your internet connection was working when you ran the script
-- 🔄 Try running your Python script again
+**If something doesn't look right:**
+- Ask Copilot Chat: "My satellites.txt file doesn't look right. Can you help me debug my script?"
+- Check if your internet connection was working when you ran the script
+- Try running your Python script again
 
 ## 🎯 What Did We Just Accomplish?
 
-🎉 **Congratulations!** You just wrote your first AI-assisted Python program that:
+**Congratulations!** You just wrote your first AI-assisted Python program that:
 
-- 🌐 **Connected to the internet** to fetch real-time satellite data
-- 📊 **Downloaded thousands of satellite records** from a scientific database
-- 💾 **Saved the data to a file** for future use
-- 🤖 **Used GitHub Copilot** as your coding assistant
+- **Connected to the internet** to fetch real-time satellite data
+- **Downloaded thousands of satellite records** from a scientific database
+- **Saved the data to a file** for future use
+- **Used GitHub Copilot** as your coding assistant
 
-This is the foundation for answering our big question: "How many satellites are overhead right now?" In the next steps, we'll learn how to filter this data for your specific location and visualize it! 🗺️
+This is the foundation for answering our big question: "How many satellites are overhead right now?" In the next steps, we'll learn how to filter this data for your specific location and visualize it!
 
 ---
 
-**Next:** [🌍 Step 2: Plot Satellite Orbits](../step2_data_processing/README.md)
+**Next:** [🌍 Step 2: Visualizing Our Satellite Data](../step2_data_processing/README.md)
