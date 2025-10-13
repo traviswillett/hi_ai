@@ -127,6 +127,17 @@ tr:nth-child(even) {
 .mermaid {
   text-align: center;
   margin: 2rem 0;
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Ensure mermaid diagrams are responsive */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Add some fun animations */
