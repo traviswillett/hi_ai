@@ -53,16 +53,31 @@ Walk outside and look up at the night sky. How many of those dots are satellites
 
 ## Project Flow (Visual Outline)
 
-```mermaid
-flowchart TD
-   A[Ask the Question: How many satellites are overhead?]
-   B[Get Satellite Data]
-   C[Store the Data]
-   E[Filter Data for our Location]
-   D[Plot or Visualize the Data]
-   F[Interact or Explore]
-   A --> B --> C --> E --> D --> F
-```
+<div class="flowchart">
+  <div class="flow-step">
+    <div class="step-box">📋 Ask the Question<br><small>How many satellites are overhead?</small></div>
+    <div class="arrow">↓</div>
+  </div>
+  <div class="flow-step">
+    <div class="step-box">📡 Get Satellite Data<br><small>Download from Celestrak</small></div>
+    <div class="arrow">↓</div>
+  </div>
+  <div class="flow-step">
+    <div class="step-box">💾 Store the Data<br><small>Save to files</small></div>
+    <div class="arrow">↓</div>
+  </div>
+  <div class="flow-step">
+    <div class="step-box">🔍 Filter Data<br><small>For our location</small></div>
+    <div class="arrow">↓</div>
+  </div>
+  <div class="flow-step">
+    <div class="step-box">📊 Plot or Visualize<br><small>Show on interactive map</small></div>
+    <div class="arrow">↓</div>
+  </div>
+  <div class="flow-step">
+    <div class="step-box">🎮 Interact or Explore<br><small>Click, zoom, filter</small></div>
+  </div>
+</div>
 
 ---
 

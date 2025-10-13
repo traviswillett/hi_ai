@@ -45,6 +45,14 @@ mermaid:
   # Visit https://unpkg.com/browse/mermaid/ for available versions
   version: "10.6.1"
 
+# Markdown processing
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
 # Collections (for organizing multiple steps)
 collections:
   steps:
