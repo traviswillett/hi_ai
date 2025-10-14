@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>🌍 Step 2: Visualizing Our Satellite Data | AI-Enabled Satellite Tracker</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="🌍 Step 2: Visualizing Our Satellite Data" />
+<meta name="author" content="Travis Willett" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries." />
+<meta property="og:description" content="Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries." />
+<link rel="canonical" href="http://localhost:4000/hi_ai/step2_data_processing/" />
+<meta property="og:url" content="http://localhost:4000/hi_ai/step2_data_processing/" />
+<meta property="og:site_name" content="AI-Enabled Satellite Tracker" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="🌍 Step 2: Visualizing Our Satellite Data" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Travis Willett"},"description":"Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries.","headline":"🌍 Step 2: Visualizing Our Satellite Data","url":"http://localhost:4000/hi_ai/step2_data_processing/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/hi_ai/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/hi_ai/feed.xml" title="AI-Enabled Satellite Tracker" /></head><body><header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/hi_ai/">AI-Enabled Satellite Tracker</a><div class="site-description">Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries.</div></div>
+</header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">🌍 Step 2: Visualizing Our Satellite Data</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="-step-2-visualizing-our-satellite-data">🌍 Step 2: Visualizing Our Satellite Data</h1>
+
+<p>We downloaded thousands of satellites in Step 1, but looking at a text file with 77,000+ lines isn’t very helpful. Let’s create visual plots to understand what we actually collected.</p>
+
+<p>This is also a perfect opportunity to learn something important about working with AI: <strong>the way you ask for help completely changes what you get.</strong></p>
+
+<h2 id="-what-we-want-to-understand">🎯 What We Want to Understand</h2>
+
+<p>Looking at our <code class="language-plaintext highlighter-rouge">satellites.txt</code> file, we have questions like:</p>
+<ul>
+  <li>How many satellites did we actually download?</li>
+  <li>What types of satellites are up there? (Military? Commercial? Scientific?)</li>
+  <li>Where are they? Can we see them moving around Earth?</li>
+  <li>How can we visualize this data to make sense of it?</li>
+</ul>
+
+<h2 id="-experiment-two-ways-to-ask-for-help">🧪 Experiment: Two Ways to Ask for Help</h2>
+
+<h3 id="round-1-the-simple-request">Round 1: The Simple Request</h3>
+
+<p>Let’s start by asking AI the way most people naturally would:</p>
+
+<ol>
+  <li><strong>Copy your satellite data</strong> from step 1:
+    <div class="language-powershell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="n">copy</span><span class="w"> </span><span class="o">..</span><span class="nx">\step1_get_satellites\satellites.txt</span><span class="w"> </span><span class="o">.</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Ask Copilot the obvious question</strong>:
+Open Copilot Chat (<code class="language-plaintext highlighter-rouge">Ctrl+Alt+I</code>) and ask:</p>
+
+    <blockquote>
+      <p>Plot the satellites in satellites.txt</p>
+    </blockquote>
+  </li>
+  <li><strong>Run whatever it creates</strong>:
+    <ul>
+      <li>Accept whatever filename Copilot suggests</li>
+      <li>Install any packages it recommends</li>
+      <li>Run the script and see what happens</li>
+    </ul>
+  </li>
+  <li><strong>Observe the results</strong>:
+    <ul>
+      <li>What type of visualization did it create?</li>
+      <li>What did it focus on showing you?</li>
+      <li>What questions do you still have?</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="round-2-the-detailed-request">Round 2: The Detailed Request</h3>
+
+<p>Now let’s try being much more specific about what we want:</p>
+
+<ol>
+  <li>
+    <p><strong>Ask for something specific</strong>:
+This time, be very clear about what you want to see:</p>
+
+    <blockquote>
+      <p>I want to visualize the International Space Station (ISS) from my satellite data. 
+Create a Python script called iss_tracker.py that:</p>
+      <ol>
+        <li>Finds the ISS in my satellites.txt file</li>
+        <li>Shows where it is right now over a real world map</li>
+        <li>Draws its orbit path around Earth</li>
+        <li>Uses professional satellite tracking libraries for accuracy</li>
+        <li>Shows me orbital details like altitude and how long one orbit takes</li>
+      </ol>
+
+      <p>Please use Skyfield library for satellite calculations and Cartopy for the world map.
+I want to see continents, oceans, and the ISS position marked clearly.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p><strong>Install the professional tools</strong>:
+When Copilot asks about packages:</p>
+
+    <blockquote>
+      <p>Please help me install matplotlib, cartopy, skyfield, and numpy for satellite visualization.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p><strong>Compare the results</strong>:</p>
+    <ul>
+      <li>Run both scripts and compare what they show you</li>
+      <li>Which one helps you understand your satellite data better?</li>
+      <li>Which one looks more professional?</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="-what-youll-discover">🔍 What You’ll Discover</h2>
+
+<p><strong>Simple request results:</strong></p>
+<ul>
+  <li>Basic counting and categorization of satellites</li>
+  <li>Simple bar chart showing satellite distribution</li>
+  <li>Quick overview of your dataset</li>
+</ul>
+
+<p><strong>Detailed request results:</strong></p>
+<ul>
+  <li>Real-time ISS tracking on a world map</li>
+  <li>Professional visualization with orbital calculations</li>
+  <li>Shows how satellites actually move in space</li>
+</ul>
+
+<p><strong>The lesson:</strong> Same data, same AI assistant, completely different results based on how you asked.</p>
+
+<h2 id="-why-this-matters">💡 Why This Matters</h2>
+
+<p><strong>AI needs context to help you effectively:</strong></p>
+<ul>
+  <li>Simple requests get basic solutions</li>
+  <li>Specific requests with technical details get professional-quality results</li>
+  <li>You don’t need to be an expert to ask for sophisticated tools</li>
+</ul>
+
+<p><strong>Tips for better AI conversations:</strong></p>
+<ul>
+  <li>Start simple to see what happens, then be more specific</li>
+  <li>Mention professional libraries even if you don’t know them well</li>
+  <li>Describe your end goal clearly (“track the ISS” vs. “plot data”)</li>
+</ul>
+
+<h2 id="-verify-your-understanding">✅ Verify Your Understanding</h2>
+
+<p>After completing both experiments, you should have:</p>
+<ul>
+  <li>Two different scripts showing different approaches</li>
+  <li>Understanding of how prompt specificity affects results</li>
+  <li>Knowledge about your satellite dataset</li>
+  <li>Experience with both basic and professional Python visualization techniques</li>
+</ul>
+
+<h2 id="-whats-next">🚀 What’s Next</h2>
+
+<p>Now that you understand your satellite data and how to work effectively with AI, you can:</p>
+<ul>
+  <li>Try tracking other satellites beyond the ISS</li>
+  <li>Experiment with different visualization approaches</li>
+  <li>Ask for more sophisticated features like animation or interactivity</li>
+</ul>
+
+<hr />
+
+<p><strong>Previous:</strong> <a href="/hi_ai/step1_get_satellites/">👈 Step 1: Get Satellite Data</a></p>
+
+<p><strong>Next:</strong> Step 3: Real-time Tracking (coming soon!)</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/hi_ai/"></data>
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Travis Willett</li><li><a class="u-email" href="mailto:"></a></li></ul>
+      </div>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/traviswillett"><svg class="svg-icon"><use xlink:href="/hi_ai/assets/minima-social-icons.svg#github"></use></svg> <span class="username">traviswillett</span></a></li></ul></div>
+      <div class="footer-col footer-col-3">
+        <p>Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries.</p>
+      </div>
+    </div>
+  </div>
+</footer></body>
+
+</html>

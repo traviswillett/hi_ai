@@ -1,0 +1,8 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    {%- if site.description -%}
+      <div class="site-description">{{ site.description | escape }}</div>
+    {%- endif -%}
+  </div>
+</header>

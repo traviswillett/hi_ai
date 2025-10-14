@@ -1,17 +1,48 @@
 ---
 ---
 
+/* Import the base theme (Jekyll Liquid syntax - linter warning is expected) */
 @import "{{ site.theme }}";
+
+/* RESET AND OVERRIDE THEME STYLES */
+.wrapper {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page-content {
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.site-header {
+  border: none !important;
+  min-height: auto !important;
+}
+
+.site-title {
+  float: none !important;
+  margin: 0 auto !important;
+  display: block !important;
+  text-align: center !important;
+}
+
+.site-nav {
+  display: none !important;
+}
 
 /* Custom styling for AI Satellite Tracker Project */
 
-/* Make the site more colorful and engaging */
+/* FORCE OVERRIDE: Make the site more colorful and engaging */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
-  color: #2c3e50;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  line-height: 1.6 !important;
+  color: #2c3e50 !important;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+  min-height: 100vh !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Add a subtle overlay pattern */
@@ -30,24 +61,26 @@ body::before {
 }
 
 /* Main content container with modern card design */
-.main-content {
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  margin: 2rem auto;
-  padding: 2rem;
-  max-width: 1200px;
+.wrapper {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  margin: 2rem auto !important;
+  padding: 2rem !important;
+  max-width: 1200px !important;
 }
 
-/* Header styling with enhanced design */
+/* Enhanced header styling with modern design */
 .site-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-  color: white;
-  padding: 3rem 0;
-  position: relative;
-  overflow: hidden;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+  color: white !important;
+  padding: 3rem 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border: none !important;
+  min-height: auto !important;
 }
 
 .site-header::before {
@@ -69,12 +102,17 @@ body::before {
 
 .site-title {
   color: white !important;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-decoration: none;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-  position: relative;
-  z-index: 2;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3) !important;
+  position: relative !important;
+  z-index: 2 !important;
+  float: none !important;
+  margin: 0 auto !important;
+  display: block !important;
+  text-align: center !important;
+  line-height: normal !important;
 }
 
 .site-description {
@@ -88,43 +126,43 @@ body::before {
 
 /* Make headings more visually appealing with modern design */
 h1, h2, h3, h4, h5, h6 {
-  color: #2c3e50;
-  font-weight: 600;
-  position: relative;
+  color: #2c3e50 !important;
+  font-weight: 600 !important;
+  position: relative !important;
 }
 
 h1 {
-  color: #3742fa;
-  border-bottom: 3px solid #3742fa;
-  padding-bottom: 0.5rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  color: #3742fa !important;
+  border-bottom: 3px solid #3742fa !important;
+  padding-bottom: 0.5rem !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 2.5rem !important;
+  margin-bottom: 2rem !important;
 }
 
 h2 {
-  color: #5352ed;
-  border-left: 4px solid #5352ed;
-  padding-left: 1rem;
-  margin-top: 2rem;
-  position: relative;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-  padding: 1rem;
-  border-radius: 10px;
-  border-left: 4px solid #3742fa;
+  color: #5352ed !important;
+  border-left: 4px solid #5352ed !important;
+  padding-left: 1rem !important;
+  margin-top: 2rem !important;
+  position: relative !important;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%) !important;
+  padding: 1rem !important;
+  border-radius: 10px !important;
+  border-left: 4px solid #3742fa !important;
 }
 
 h2::before {
-  content: '🚀';
-  position: absolute;
-  left: -2rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.5rem;
-  animation: bounce 2s infinite;
+  content: '🚀' !important;
+  position: absolute !important;
+  left: -2rem !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  font-size: 1.5rem !important;
+  animation: bounce 2s infinite !important;
 }
 
 @keyframes bounce {

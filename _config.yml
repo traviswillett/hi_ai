@@ -63,8 +63,8 @@ exclude:
   - gemfiles/
   - "*.py"
   - "*.txt"
-  - "*.png"
-  - "*.jpg"
+  - "step*/example_*.png"
+  - "step*/temp_*.jpg"
 
 # Custom styling
 sass:

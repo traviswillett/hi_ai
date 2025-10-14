@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>AI-Enabled Satellite Tracker | Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries.</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="AI-Enabled Satellite Tracker" />
+<meta name="author" content="Travis Willett" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries." />
+<meta property="og:description" content="Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries." />
+<link rel="canonical" href="http://localhost:4000/hi_ai/" />
+<meta property="og:url" content="http://localhost:4000/hi_ai/" />
+<meta property="og:site_name" content="AI-Enabled Satellite Tracker" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="AI-Enabled Satellite Tracker" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Travis Willett"},"description":"Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries.","headline":"AI-Enabled Satellite Tracker","name":"AI-Enabled Satellite Tracker","url":"http://localhost:4000/hi_ai/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/hi_ai/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/hi_ai/feed.xml" title="AI-Enabled Satellite Tracker" /></head><body><header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/hi_ai/">AI-Enabled Satellite Tracker</a><div class="site-description">Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries.</div></div>
+</header><main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home"><p><img src="/hi_ai/assets/look_up.png" alt="A person looking up at the night sky, wondering about satellites." /></p>
+
+<p>Walk outside and look up at the night sky. How many of those dots are satellites? How many satellites are overhead that we can’t see? How might we find out?</p>
+
+<p><strong>Ways to investigate:</strong></p>
+
+<ul>
+  <li>Count the dots that move across the sky
+    <ul>
+      <li>LEO and MEO satellites move faster than stars, this might work.</li>
+      <li>GEO satellites are so far away and move at the same speed as Earth’s rotation so we can’t see them… Next.</li>
+    </ul>
+  </li>
+  <li>Use a telescope or binoculars to see which dots look different
+    <ul>
+      <li>That’s a lot of dots…</li>
+    </ul>
+  </li>
+  <li>Wait, we’re AI experts, let’s just ask an AI like Google Gemini or Copilot: “How can I tell which dots in the sky are satellites?”</li>
+</ul>
+
+<p><strong>Try this:</strong></p>
+
+<ol>
+  <li>Open your web browser and go to <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer">Google Gemini</a>.</li>
+  <li>Type or say: <code class="language-plaintext highlighter-rouge">How many satellites are overhead of me right now?</code></li>
+  <li>
+    <p>Read the answer and think about what you learn!</p>
+
+    <details>
+ <summary><strong>Sample Gemini Response (click to reveal)</strong></summary>
+
+ &gt; "That's a great question, but I can't give you a precise number without knowing your exact location and the specific definition of 'overhead.'
+ &gt;
+ &gt; The actual number of cataloged space objects—satellites, rocket bodies, and debris—crossing the visible sky at any given moment is always changing, but it's typically dozens of objects.
+ &gt;
+ &gt; According to real-time satellite trackers:
+ &gt;
+ &gt; &nbsp;&nbsp;&nbsp;&nbsp;At any given time, there can be dozens of objects (sometimes 80 or more) crossing the sky above a general location.
+ &gt;
+ &gt; &nbsp;&nbsp;&nbsp;&nbsp;This includes operational satellites like those in the GPS, Starlink, or Iridium constellations, as well as defunct satellites and debris.
+ &gt;
+ &gt; If you are interested in seeing a specific, visible satellite, like the International Space Station (ISS) or a Starlink train, you would need to use a real-time satellite tracking website or app. These tools use your location to calculate the exact timing, path, and brightness for objects that will be visible to you."
+
+ </details>
+  </li>
+  <li>Do you think we can do better? How can AI help us build a better answer?</li>
+</ol>
+
+<hr />
+
+<h1 id="ai-enabled-satellite-tracker-project">AI-enabled Satellite Tracker Project</h1>
+
+<p><strong>Goal:</strong> Answer the question: <em>“How many satellites are overhead right now?”</em> using code, visuals, and interactive tools.</p>
+
+<p><strong>Tools:</strong></p>
+<ul>
+  <li>GitHub Copilot (AI coding assistant)</li>
+  <li>Visual Studio Code (VS Code)</li>
+  <li>Python</li>
+  <li>Docker</li>
+  <li>MagicPatterns (AI Visualization Mockup)</li>
+  <li>JavaScript &amp; CesiumJS (for 3D visualization)</li>
+</ul>
+
+<h2 id="-project-flow-visual-outline">🎯 Project Flow (Visual Outline)</h2>
+
+<div class="flowchart-container">
+  <div class="flowchart-step">
+    <div class="step-icon">📋</div>
+    <div class="step-title">Ask the Question</div>
+    <div class="step-description">How many satellites are overhead?</div>
+  </div>
+  
+  <div class="flowchart-arrow">⬇️</div>
+  
+  <div class="flowchart-step">
+    <div class="step-icon">📡</div>
+    <div class="step-title">Get Satellite Data</div>
+    <div class="step-description">Download from Celestrak</div>
+  </div>
+  
+  <div class="flowchart-arrow">⬇️</div>
+  
+  <div class="flowchart-step">
+    <div class="step-icon">💾</div>
+    <div class="step-title">Store the Data</div>
+    <div class="step-description">Save to files</div>
+  </div>
+  
+  <div class="flowchart-arrow">⬇️</div>
+  
+  <div class="flowchart-step">
+    <div class="step-icon">🔍</div>
+    <div class="step-title">Filter Data</div>
+    <div class="step-description">For our location</div>
+  </div>
+  
+  <div class="flowchart-arrow">⬇️</div>
+  
+  <div class="flowchart-step">
+    <div class="step-icon">📊</div>
+    <div class="step-title">Plot or Visualize ✅</div>
+    <div class="step-description">Professional satellite tracking with real-time ISS position</div>
+  </div>
+  
+  <div class="flowchart-arrow">⬇️</div>
+  
+  <div class="flowchart-step">
+    <div class="step-icon">🎮</div>
+    <div class="step-title">Interact or Explore</div>
+    <div class="step-description">Click, zoom, filter</div>
+  </div>
+</div>
+
+<hr />
+
+<h2 id="-next-steps">🚀 Next Steps</h2>
+
+<ul>
+  <li>Sample code and AI prompts will be added in each folder as you progress.</li>
+  <li>Visuals and diagrams will be included to guide each step.</li>
+  <li>No prior coding experience needed—just curiosity!</li>
+</ul>
+
+<p><strong>Let’s build something amazing—one visual step at a time!</strong></p>
+
+<h2 id="️-get-set-up-tools-youll-need">🛠️ Get Set Up: Tools You’ll Need</h2>
+
+<p>Before you start coding, make sure you have everything you need!</p>
+
+<h3 id="1-create-a-github-account">1. Create a GitHub Account</h3>
+<ol>
+  <li>Go to <a href="https://github.com/" target="_blank" rel="noopener noreferrer">https://github.com/</a></li>
+  <li>Click <strong>Sign up</strong> and follow the instructions to create your free account.</li>
+  <li>Verify your email address.</li>
+</ol>
+
+<h3 id="2-install-visual-studio-code-vs-code">2. Install Visual Studio Code (VS Code)</h3>
+<ol>
+  <li>Go to <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">https://code.visualstudio.com/</a></li>
+  <li>Download and install VS Code for your computer (Windows, Mac, or Linux).</li>
+  <li>Open VS Code after installation.</li>
+</ol>
+
+<h3 id="3-enable-github-copilot">3. Enable GitHub Copilot</h3>
+<ol>
+  <li>In VS Code, click the Extensions icon (or press <code class="language-plaintext highlighter-rouge">Ctrl+Shift+X</code>).</li>
+  <li>Search for <strong>GitHub Copilot</strong>.</li>
+  <li>Click <strong>Install</strong> next to the GitHub Copilot extension.</li>
+  <li>Sign in with your GitHub account if prompted.</li>
+  <li>You’re ready to use AI to help you code!</li>
+</ol>
+
+<h3 id="4-install-python">4. Install Python</h3>
+<ol>
+  <li>You need Python 3.14 on your computer to run Python files.</li>
+  <li>Let GitHub Copilot help you install it through VS Code:
+    <ul>
+      <li>Open VS Code</li>
+      <li>Press <code class="language-plaintext highlighter-rouge">Ctrl+I</code> (or <code class="language-plaintext highlighter-rouge">Cmd+I</code> on Mac) to open Copilot Chat</li>
+      <li>Ask: “How do I install Python 3.14 on my computer through VS Code?”</li>
+      <li>Follow Copilot’s step-by-step instructions for your operating system</li>
+    </ul>
+  </li>
+  <li>After installation, restart VS Code.</li>
+  <li>When you open a <code class="language-plaintext highlighter-rouge">.py</code> file in VS Code, you may see a prompt to install the Python extension—click <strong>Install</strong> if prompted.</li>
+  <li>You can check if Python is installed by opening a terminal in VS Code and typing <code class="language-plaintext highlighter-rouge">python --version</code> (or <code class="language-plaintext highlighter-rouge">python3 --version</code> on Mac/Linux).</li>
+  <li>If you have any issues, ask Copilot Chat: “I’m having trouble with Python installation, can you help troubleshoot?”</li>
+  <li>You can check if Python is installed by opening a terminal in VS Code and typing <code class="language-plaintext highlighter-rouge">python --version</code> (or <code class="language-plaintext highlighter-rouge">python3 --version</code> on Mac/Linux).</li>
+  <li>If you have any issues, see the <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank" rel="noopener noreferrer">VS Code Python setup guide</a> or ask Copilot chat for help.</li>
+</ol>
+
+<hr />
+
+<h2 id="-make-sure-everything-works-hello-world-test">✅ Make Sure Everything Works: Hello World Test</h2>
+
+<p>Before you start with satellites, let’s make sure your setup is working!</p>
+
+<ol>
+  <li>Open this project folder in VS Code.</li>
+  <li>Create a new file called <code class="language-plaintext highlighter-rouge">hello.py</code>.</li>
+  <li>In the new file, type <code class="language-plaintext highlighter-rouge"># Write a Python program that prints Hello, world!</code> and press <code class="language-plaintext highlighter-rouge">Enter</code>.</li>
+  <li>If you have GitHub Copilot enabled, you should see a suggestion for a print statement. Press <code class="language-plaintext highlighter-rouge">Tab</code> to accept it.</li>
+  <li>Save the file and run it (right-click and select <strong>Run Python File in Terminal</strong>, or type <code class="language-plaintext highlighter-rouge">python hello.py</code> in the terminal).</li>
+  <li>You should see <code class="language-plaintext highlighter-rouge">Hello, world!</code> printed in the terminal.</li>
+</ol>
+
+<p>If this works, you’re ready to start coding with Copilot!</p>
+
+<h2 id="-lets-go">🎯 Let’s Go!</h2>
+<p>Ready to start coding? Begin with:</p>
+
+<p><strong><a href="/hi_ai/step1_get_satellites/">👉 Step 1: Get Satellite Data</a></strong></p>
+
+<p><strong><a href="/hi_ai/step2_data_processing/">🌍 Step 2: Plot Satellite Orbits</a></strong></p>
+
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/hi_ai/"></data>
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Travis Willett</li><li><a class="u-email" href="mailto:"></a></li></ul>
+      </div>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/traviswillett"><svg class="svg-icon"><use xlink:href="/hi_ai/assets/minima-social-icons.svg#github"></use></svg> <span class="username">traviswillett</span></a></li></ul></div>
+      <div class="footer-col footer-col-3">
+        <p>Learn AI-powered software development by building professional satellite tracking applications with Python, GitHub Copilot, and advanced visualization libraries.</p>
+      </div>
+    </div>
+  </div>
+</footer></body>
+
+</html>
