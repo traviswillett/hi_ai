@@ -1,0 +1,18 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:4.2.2
+    ports:
+      - "4000:4000"
+      - "35729:35729"  # LiveReload port
+    volumes:
+      - .:/srv/jekyll
+      - jekyll_cache:/srv/jekyll/.jekyll-cache
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+    working_dir: /srv/jekyll
+    command: bash -c "bundle install && bundle exec jekyll serve --host 0.0.0.0 --livereload --force_polling --config _config.yml,_config_dev.yml"
+
+volumes:
+  jekyll_cache:
+  bundle_cache:
