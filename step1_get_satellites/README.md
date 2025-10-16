@@ -46,9 +46,9 @@ You don't need to understand all the numbers yet—just know that this is the da
 
 Now let's use GitHub Copilot to help us write Python code that downloads satellite data!
 
-**Step-by-step:**
+**📋 Step-by-step:**
 
-1. Open Copilot Chat by pressing `Ctrl+Alt+I` (or `Ctrl+Cmd+I` on Mac).
+1. Open Copilot Chat by pressing `Ctrl+I` (or `Cmd+I` on Mac).
 
 2. Ask Copilot to create the file for you: "Create an empty Python file called get_satellites.py in this folder and let's work on it together."
 
@@ -66,7 +66,7 @@ Now let's use GitHub Copilot to help us write Python code that downloads satelli
 6. Run your program and see if it creates a `satellites.txt` file with real satellite data!
 
 <details>
-<summary><strong>🔧 Troubleshooting: Missing Modules</strong> (click if you get errors)</summary>
+<summary><strong>Troubleshooting: Missing Modules</strong> (click if you get errors)</summary>
 
 If you get an error like `ModuleNotFoundError: No module named 'requests'`, don't worry! This is normal and a great chance to practice with Copilot.
 
@@ -84,7 +84,7 @@ If you get an error like `ModuleNotFoundError: No module named 'requests'`, don'
 
 Great! If your Python script ran without errors, you should now have a file called `satellites.txt` with real satellite data. Let's make sure it worked!
 
-**Step-by-step verification:**
+**📋 Step-by-step verification:**
 
 1. **Find your new file:** Look in the same folder as your `get_satellites.py` file. You should see a new file called `satellites.txt`.
 
@@ -116,7 +116,7 @@ Great! If your Python script ran without errors, you should now have a file call
 
 ## 🎯 What Did We Just Accomplish?
 
-**Congratulations!** You just wrote your first AI-assisted Python program that:
+🎉 **Congratulations!** You just wrote your first AI-assisted Python program that:
 
 - **Connected to the internet** to fetch real-time satellite data
 - **Downloaded thousands of satellite records** from a scientific database

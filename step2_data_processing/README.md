@@ -1,4 +1,4 @@
-# 🌍 Step 2: Visualizing Our Satellite Data
+# 🔍 Step 2: Data Processing
 
 We downloaded thousands of satellites in Step 1, but looking at a text file with 77,000+ lines isn't very helpful. Let's create visual plots to understand what we actually collected.
 
@@ -24,7 +24,7 @@ Let's start by asking AI the way most people naturally would:
    ```
 
 2. **Ask Copilot the obvious question**:
-   Open Copilot Chat (`Ctrl+Alt+I`) and ask:
+   Open Copilot Chat (`Ctrl+I`) and ask:
    
    > Plot the satellites in satellites.txt
 
