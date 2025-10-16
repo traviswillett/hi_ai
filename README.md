@@ -80,7 +80,7 @@ Walk outside and look up at the night sky. How many of those dots are satellites
   
   <div class="flowchart-step">
     <div class="step-icon">🔍</div>
-    <div class="step-title">Filter Data</div>
+    <div class="step-title">Understand Data</div>
     <div class="step-description">For our location</div>
   </div>
   
