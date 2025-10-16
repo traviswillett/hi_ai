@@ -51,7 +51,7 @@ Walk outside and look up at the night sky. How many of those dots are satellites
    - JavaScript & CesiumJS (for 3D visualization)
 
 
-## 🎯 Project Flow (Visual Outline)
+## 📋 Project Flow (Visual Outline)
 
 <div class="flowchart-container">
   <div class="flowchart-step">
@@ -88,8 +88,8 @@ Walk outside and look up at the night sky. How many of those dots are satellites
   
   <div class="flowchart-step">
     <div class="step-icon">📊</div>
-    <div class="step-title">Plot or Visualize ✅</div>
-    <div class="step-description">Professional satellite tracking with real-time ISS position</div>
+    <div class="step-title">Plot or Visualize</div>
+    <div class="step-description">Show on interactive map</div>
   </div>
   
   <div class="flowchart-arrow">⬇️</div>
