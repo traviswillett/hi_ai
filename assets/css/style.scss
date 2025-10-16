@@ -330,12 +330,6 @@ summary:hover {
   }
 }
 
-/* Add some visual flair with emojis and icons */
-h2:before {
-  content: "🚀 ";
-  margin-right: 0.5rem;
-}
-
 /* Special styling for step headings */
 h1:contains("Step") {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
